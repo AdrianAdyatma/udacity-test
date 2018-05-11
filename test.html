@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS</title>
+    <style type="text/css">
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .underlinedP {
+            text-decoration: underline;
+        }
+
+        .clear-float {
+            clear: both;
+        }
+
+        #introduction {
+            color: #1976D2;
+            background-color: #004D40;
+            width: 700px;
+            left: 100px;
+            top: 100px;
+            position: relative;opacity: 0.5;
+            z-index: 1;
+        }
+
+        #second-section {
+            color: yellow;
+            width: 300px;
+            background-color: #33691E;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="introduction">
+
+        <p>The quick brown fox jumped over the lazy dog</p>
+
+    </div>
+
+    <div id="second-section">
+
+        <p>This is some more text.
+            <span class="underlinedP">And this text is underlined.</span>
+        </p>
+
+    </div>
+
+    <div class="clear-float">
+        <p>This paragraph is not floating.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello World!</title>
+    <style type="text/css">
+        body {
+            background-color: #EF5350;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        div {
+            width: 600px;
+            margin: 100px auto;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 20px;
+        }
+
+        a:link,
+        a:visited {
+            color: #006064;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #00B8D4;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Helloo!</h1>
+        <p>&lt;a&gt;</p>
+        <p>
+            <a href="test.html">Next Page</a>
+        </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>Major</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adriannnnnnnn</td>
+                    <td>Pwt</td>
+                    <td>IT</td>
+                </tr>
+                <tr>
+                    <td>Axl</td>
+                    <td>Bms</td>
+                    <td>IT</td>
+                </tr>
+                <tr>
+                    <td>Adi</td>
+                    <td>Pbg</td>
+                    <td>IT</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <hr>
+        <p>Here is some
+            <strong>strong</strong>
+            <em>emphasis</em>
+            <ins>inserted/underlined</ins>
+            <sup>superscript</sup>
+            <sub>subscript</sub>
+            <del>deleted</del> word</p>
+        <hr>
+        <ul>
+            <li>
+                <em>Number 1</em>
+            </li>
+            <li>Number 2</li>
+            <li>Number 3</li>
+        </ul>
+        <hr>
+        <ol reversed start="11">
+            <li>
+                <em>Number 1</em>
+            </li>
+            <li>Number 2</li>
+            <li>Number 3</li>
+        </ol>
+        <hr>
+        <p>
+            <a href="http://www.adrianadyatma.wordpress.com">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ash_Tree_-_geograph.org.uk_-_590710.jpg/220px-Ash_Tree_-_geograph.org.uk_-_590710.jpg"
+                    alt="Tree">
+            </a>
+            <p>
+                <a href="#submitData">Go to Submit</a>
+            </p>
+        </p>
+        <hr>
+        <form>
+            <fieldset>
+                <legend>Test</legend>
+                <p>Name :
+                    <input type="text" value="Filler">
+                </p>
+                <p>Username :
+                    <input name="username" placeholder="Namamu" type="text">
+                </p>
+                <p>
+                    <input type="checkbox" id="stayLogged" name="stayLogged" onclick="stayLoggedCaution()"> Stay logged in</p>
+                <p id="textCaution" style="display: none">Be careful if you're on public computer</p>
+
+                <script>
+                    function stayLoggedCaution() {
+                        var checkbox = document.getElementById("stayLogged");
+                        var text = document.getElementById("textCaution");
+                        if (checkbox.checked) {
+                            text.style.display = "block";
+                        } else {
+                            text.style.display = "none";
+                        }
+                    }
+                </script>
+
+                <p>
+                    <input type="radio" id="over18" name="age">Over 18</p>
+                <p>
+                    <input type="radio" id="under18" name="age">Under 18</p>
+
+                <p>Favourite food :
+                    <select>
+                        <optgroup label="Italian">
+                            <option value="spaghetti">Spaghetti</option>
+                            <option value="past">Pasta</option>
+                        </optgroup>
+                    </select>
+                </p>
+                <p id="submitData">
+                    <input type="submit" value="Submit your data">
+                    <!-- Ctrl + K -> C -->
+                </p>
+            </fieldset>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
